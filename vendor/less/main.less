@@ -6,6 +6,8 @@
     --blue: #6495ed;
     --white: #F8F8F8;
     --green: #ACCF29;
+    --black: #222222;
+    --grey: #cccccc;
 }
 
 * {
@@ -63,22 +65,43 @@ body {
         width: 100%;
         display: block;
         padding: 15px;
-        background: var(--green);
-        color: var(--white);
 
         p {
             font-size: 16px;
             line-height: 1;
         }
+    }
 
+    .top-fix{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+    }
+
+    .green {
+        background: var(--green);
+        color: var(--white);
+        
         &:hover {
             color: var(--white);
-            background: var(--green);
+            .opacity(0.8)
+        }
+    }
+
+    .grey {
+        background: var(--grey);
+        color: var(--black);
+        
+        &:hover {
+            color: var(--black);
             .opacity(0.8)
         }
     }
 
     header {
+        padding-top: 46px;
         background: #333;
 
         .navbar {
@@ -107,7 +130,7 @@ body {
                             left: 22%;
                             font-size: 16px;
                             line-height: 1;
-                            color: #accf29;
+                            color: var(--green);
                         }
 
                         svg {
@@ -116,7 +139,7 @@ body {
 
                             .box-icon-class {
                                 fill: none;
-                                stroke: #fff;
+                                stroke: var(--white);
                                 stroke-linecap: round;
                                 stroke-linejoin: round;
                                 stroke-width: 1.84px
@@ -135,6 +158,7 @@ body {
                         padding: 0 1.25rem;
                         display: inline-block;
                         font-weight: 700;
+                        .transition(0.4s);
                         color: var(--white);
                         width: 100%;
 
@@ -142,26 +166,87 @@ body {
 
 
                     &:hover {
-                        background: #222;
+                        background: var(--black);
 
                         .nav-link {
-                            color: #ccc;
+                            color: var(--grey);
+
                             span.number {
-                               color: #f1852a;
+                                color: #f1852a;
                             }
                         }
 
                         svg {
 
                             .box-icon-class {
-                                stroke: #accf29;
+                                stroke: var(--green);
                             }
                         }
                     }
                 }
 
-                .has-dropdown{
+                .has-dropdown {
                     position: relative;
+                    .transition(0.4s);
+
+                    .drop-menu {
+                        .opacity(0);
+                        .transition(0.4s);
+                        .transform(translateY(-40px));
+                        position: absolute;
+                        background: #333;
+                        top: 100%;
+                        right: 0;
+                        width: 180px;
+
+                        .menu-item {
+                            width: 100%;
+                            text-align: center;
+                            padding-bottom: 5px;
+                            border-bottom: 1px solid var(--grey);
+                            .transition(0.3s);
+
+                            .menu-link {
+                                padding: 10px 5px;
+                                position: relative;
+                                width: 100%;
+                                display: block;
+
+                                .icons {
+                                    position: absolute;
+                                    left: 5px;
+                                    top: 3px;
+                                    width: 25%;
+                                    float: left;
+                                    margin-right: 10px;
+                                }
+
+                                .text {
+                                    line-height: 1;
+                                    font-size: 14px;
+                                    color: var(--white);
+                                    font-weight: 600;
+                                }
+                            }
+
+                            &:hover {
+                                .menu-link {
+                                    background: var(--black);
+
+                                    .text {
+                                        color: var(--grey);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .drop-menu {
+                            .opacity(1);
+                            .transform(translateY(0));
+                        }
+                    }
                 }
 
             }
