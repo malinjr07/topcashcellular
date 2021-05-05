@@ -4,7 +4,9 @@
   --white: #F8F8F8;
   --green: #ACCF29;
   --black: #222222;
+  --dark: #333333;
   --grey: #cccccc;
+  --orange: #f1852a;
 }
 * {
   margin: 0;
@@ -89,7 +91,7 @@ body {
   }
   header {
     padding-top: 46px;
-    background: #333;
+    background: var(--dark);
   }
   header .navbar {
     padding: 0;
@@ -156,7 +158,7 @@ body {
     color: var(--grey);
   }
   header .navbar .navbar-nav .nav-item:hover .nav-link span.number {
-    color: #f1852a;
+    color: var(--orange);
   }
   header .navbar .navbar-nav .nav-item:hover svg .box-icon-class {
     stroke: var(--green);
@@ -184,7 +186,7 @@ body {
     -o-transform: translateY(-40px);
     transform: translateY(-40px);
     position: absolute;
-    background: #333;
+    background: var(--dark);
     top: 100%;
     right: 0;
     width: 180px;

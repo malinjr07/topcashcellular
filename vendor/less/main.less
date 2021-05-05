@@ -7,7 +7,9 @@
     --white: #F8F8F8;
     --green: #ACCF29;
     --black: #222222;
+    --dark: #333333;
     --grey: #cccccc;
+    --orange: #f1852a;
 }
 
 * {
@@ -72,7 +74,7 @@ body {
         }
     }
 
-    .top-fix{
+    .top-fix {
         position: fixed;
         top: 0;
         left: 0;
@@ -83,7 +85,7 @@ body {
     .green {
         background: var(--green);
         color: var(--white);
-        
+
         &:hover {
             color: var(--white);
             .opacity(0.8)
@@ -93,7 +95,7 @@ body {
     .grey {
         background: var(--grey);
         color: var(--black);
-        
+
         &:hover {
             color: var(--black);
             .opacity(0.8)
@@ -102,7 +104,7 @@ body {
 
     header {
         padding-top: 46px;
-        background: #333;
+        background: var(--dark);
 
         .navbar {
             padding: 0;
@@ -172,7 +174,7 @@ body {
                             color: var(--grey);
 
                             span.number {
-                                color: #f1852a;
+                                color: var(--orange);
                             }
                         }
 
@@ -194,7 +196,7 @@ body {
                         .transition(0.4s);
                         .transform(translateY(-40px));
                         position: absolute;
-                        background: #333;
+                        background: var(--dark);
                         top: 100%;
                         right: 0;
                         width: 180px;
@@ -253,4 +255,7 @@ body {
         }
     }
 
+    .hero-banner{
+        
+    }
 }
