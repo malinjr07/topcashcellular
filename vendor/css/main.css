@@ -617,4 +617,25 @@ p,
     -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
+  footer {
+    background: var(--black);
+    padding-top: 40px;
+    color: var(--white);
+  }
+  footer .footer-parts .head {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  footer .footer-parts .content ul li {
+    margin-bottom: 8px;
+  }
+  footer .footer-parts .content .number p {
+    font-weight: 600;
+  }
+  footer .footer-parts .content a {
+    font-weight: 300;
+    color: var(--white);
+  }
 }
