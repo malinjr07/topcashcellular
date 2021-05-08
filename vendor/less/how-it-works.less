@@ -1,0 +1,30 @@
+ @import "main.less";
+ .how-it-works {
+
+     .steps {
+         position: relative;
+
+         .icon {
+             height: 128px;
+             margin-left: 50%;
+             .transform(translateX(-50%));
+         }
+
+         .title {
+             margin: 16px 0 4px;
+         }
+
+         .text {
+             margin-bottom: 32px;
+         }
+
+         .forward {
+             position: absolute;
+             top: 6%;
+             right: -12%;
+             font-size: 36px;
+             color: var(--green);
+             .transform(rotateY(180deg))
+         }
+     }
+ }

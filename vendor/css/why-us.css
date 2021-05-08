@@ -535,3 +535,40 @@ p,
     color: var(--green);
   }
 }
+.why-us .row > div {
+  border-left: 1px solid #ccc;
+  text-align: center;
+}
+.why-us .row > div:first-child {
+  border: 0;
+}
+.why-us .steps {
+  position: relative;
+}
+.why-us .steps .icon {
+  height: 128px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.why-us .steps .title {
+  margin: 16px 0;
+}
+.why-us .steps .text {
+  margin-bottom: 32px;
+}
+.why-us .steps .forward {
+  position: absolute;
+  top: 6%;
+  right: -12%;
+  font-size: 36px;
+  color: var(--green);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
