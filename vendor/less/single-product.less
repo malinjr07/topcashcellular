@@ -1,0 +1,121 @@
+@import "_mixin.less";
+
+h4,
+h6,
+h5 {
+    .bold;
+}
+
+.product {
+    .heading {
+        margin-bottom: 40px;
+
+
+
+        h4 {
+            font-size: 26px;
+        }
+    }
+
+    .contexts {
+        color: var(--green);
+    }
+
+    .terms {
+        margin-top: 20px;
+
+        .title {
+            margin-bottom: 20px;
+
+
+        }
+
+        .questions {
+            display: block;
+
+            .answers {
+                li {
+                    float: left;
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+
+                    button.answer {
+                        padding: 8px;
+                        background: transparent;
+                        border: 2px solid #d3d3d3;
+
+                        p {
+                            padding: 5px 10px;
+                        }
+
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+
+                    button.answer.active {
+                        border: 2px solid var(--green);
+                    }
+                }
+            }
+        }
+    }
+
+    .side-box {
+        background: #f4f4f4;
+        padding: 31px 0 26px;
+
+        .line-bottom {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 2px;
+                width: 100%;
+                background: #333;
+            }
+        }
+
+        .headings,
+        .detail {
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+        }
+
+        .detail {
+            h6 {
+                margin-bottom: 10px;
+            }
+        }
+
+        .submission {
+            button {
+                width: 95%;
+                padding: 10px;
+            }
+        }
+
+        .terms {
+            .icon {
+                width: 25%;
+                float: left;
+                min-height: 90px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text {
+                .term-head {
+                    p {
+                        .bold;
+                    }
+                }
+            }
+        }
+    }
+}
