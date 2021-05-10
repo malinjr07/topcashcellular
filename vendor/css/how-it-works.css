@@ -26,6 +26,26 @@ p,
 .p {
   font-size: 14px;
 }
+.green {
+  background: var(--green);
+  color: var(--white);
+}
+.green:hover {
+  color: var(--white);
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.grey {
+  background: var(--grey);
+  color: var(--black);
+}
+.grey:hover {
+  color: var(--black);
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
 .bg-attach {
   background-repeat: no-repeat;
   background-position: center center;
@@ -241,26 +261,6 @@ body {
     -o-transform: translateY(0);
     transform: translateY(0);
   }
-}
-.green {
-  background: var(--green);
-  color: var(--white);
-}
-.green:hover {
-  color: var(--white);
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
-}
-.grey {
-  background: var(--grey);
-  color: var(--black);
-}
-.grey:hover {
-  color: var(--black);
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
 }
 @media (min-width: 1280px) {
   .main-title {

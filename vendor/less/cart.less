@@ -1,0 +1,76 @@
+@import "_mixin.less";
+
+.list-group-flush>.list-group-item {
+    border-width: 1px 0 0;
+}
+
+.cart {
+
+    background: #fff;
+
+    h6 {
+        font-weight: 700;
+    }
+
+    h6,
+    p {
+        text-align: left;
+    }
+
+    .summary {
+        padding: 10px 0;
+        width: 100%;
+
+        .list-group {
+            width: 100%;
+        }
+
+        .details {
+            width: 60%;
+        }
+
+        .price,
+        .items {
+            width: 20%;
+        }
+
+        .headings {
+            .list-group-item {
+                border: 0;
+            }
+        }
+        .items-list {
+            .list-group-item {
+                border-width: 1px 0 0;
+            }
+
+        }
+    }
+
+    .card.checkouts {
+        margin: 10px 0;
+
+        .list-group-flush>.list-group-item {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .list-group.list-group-horizontal>.list-group-item {
+            border: 0;
+            padding: 0;
+        }
+
+        p,
+        h6 {
+            font-weight: 700;
+        }
+
+        .label {
+            p {
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+    }
+
+}
