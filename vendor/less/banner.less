@@ -1,0 +1,54 @@
+@import "_mixin.less";
+
+@media (min-width: 1280px) {
+    .hero-banner {
+        .bg-attach;
+        color: var(--white);
+        text-align: center;
+
+        .overlay {
+            padding: 24px 0;
+            background: rgba(34, 34, 34, 0.9);
+
+            .main-text {
+                margin-top: 40px;
+                margin-bottom: 8px;
+
+                h1 {
+                    .bold
+                }
+            }
+
+            .mini-title {
+                margin: 24px 0;
+
+                h4 {
+                    color: #d4d4d4;
+                    font-weight: 400;
+                }
+            }
+
+            .btn {
+                padding: 16px 32px;
+                margin: 0 auto;
+            }
+
+            .feedback {
+                display: block;
+                margin: 20px 0;
+                .h4;
+                .bold;
+                font-style: italic;
+                color: #d4d4d4;
+            }
+
+            .bottom-section {
+                background: transparent;
+                border: 0;
+                color: #d4d4d4;
+                font-size: 70px;
+                .animation (upDown 3s ease-in-out 1s infinite);
+            }
+        }
+    }
+}

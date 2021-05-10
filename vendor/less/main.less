@@ -52,52 +52,6 @@ body {
     overflow-x: hidden;
 }
 
-h1,
-.h1 {
-    font-size: 52px;
-}
-
-h2,
-.h2 {
-    font-size: 40px; // 37px
-}
-
-h3,
-.h3 {
-    font-size: 36px; //27 px, 28px
-}
-
-h4,
-.h4 {
-    font-size: 24px; // 23px, 25px
-}
-
-h5,
-.h5 {
-    font-size: 20px; // 19px, 21px
-}
-
-h6,
-.h6 {
-    font-size: 16px; //17px, 18px
-}
-
-p,
-.p {
-    font-size: 14px; //11px, 12px, 13px
-}
-
-.bg-attach {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.btn {
-    text-transform: uppercase;
-}
-
 .keyframes(upDown; {
         0% {
             .transform(translateY(0))
@@ -117,6 +71,7 @@ p,
     }
 
 );
+
 
 .green {
     background: var(--green);
@@ -138,22 +93,7 @@ p,
     }
 }
 
-.color-green {
-    color: var(--green);
-}
-
-.light {
-    font-weight: 300;
-}
-
-.semi-bold {
-    font-weight: 600;
-}
-
-.bold {
-    font-weight: 700;
-}
-
+@media (min-width: 1280px) {
 .main-title {
     text-align: center;
     margin-bottom: 48px;
@@ -163,12 +103,10 @@ p,
         .h5;
     }
 }
+    .section-padding {
+        padding: 80px 0 96px;
+    }
 
-.section-padding {
-    padding: 80px 0 96px;
-}
-
-@media (min-width: 1280px) {
     .promotion {
         text-align: center;
         width: 100%;
@@ -188,8 +126,6 @@ p,
         right: 0;
         z-index: 9;
     }
-
-
 
     header {
         padding-top: 46px;
@@ -347,57 +283,6 @@ p,
         }
     }
 
-    .hero-banner {
-        .bg-attach;
-        color: var(--white);
-        text-align: center;
-
-        .overlay {
-            padding: 24px 0;
-            background: rgba(34, 34, 34, 0.9);
-
-            .main-text {
-                margin-top: 40px;
-                margin-bottom: 8px;
-
-                h1 {
-                    .bold
-                }
-            }
-
-            .mini-title {
-                margin: 24px 0;
-
-                h4 {
-                    color: #d4d4d4;
-                    font-weight: 400;
-                }
-            }
-
-            .btn {
-                padding: 16px 32px;
-                margin: 0 auto;
-            }
-
-            .feedback {
-                display: block;
-                margin: 20px 0;
-                .h4;
-                .bold;
-                font-style: italic;
-                color: #d4d4d4;
-            }
-
-            .bottom-section {
-                background: transparent;
-                border: 0;
-                color: #d4d4d4;
-                font-size: 70px;
-                .animation (upDown 3s ease-in-out 1s infinite);
-            }
-        }
-    }
-
     footer {
         background: var(--black);
         padding-top: 40px;
@@ -436,7 +321,7 @@ p,
                 width: 100%;
             }
 
-            .line{
+            .line {
                 padding-bottom: 20px;
                 margin-bottom: 20px;
                 border-bottom: 1px solid #d4d4d4;
@@ -444,15 +329,18 @@ p,
 
             .submit {
                 padding: 0 5px;
-                border-radius: 0 10px 10px 0 !important;
+                .p;
+                border-radius: 0 8px 8px 0 !important;
             }
         }
-        .bottom{
+
+        .bottom {
             width: 100%;
             margin-top: 28px;
             padding: 24px 0;
             background: #404040;
-            a{
+
+            a {
                 .color-green;
             }
         }
