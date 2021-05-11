@@ -1,0 +1,128 @@
+h1,
+.h1 {
+  font-size: 52px;
+}
+h2,
+.h2 {
+  font-size: 40px;
+}
+h3,
+.h3 {
+  font-size: 36px;
+}
+h4,
+.h4 {
+  font-size: 24px;
+}
+h5,
+.h5 {
+  font-size: 20px;
+}
+h6,
+.h6 {
+  font-size: 16px;
+}
+p,
+.p {
+  font-size: 14px;
+}
+.green {
+  background: var(--green);
+  color: var(--white);
+}
+.green:hover {
+  color: var(--white);
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.grey {
+  background: var(--grey);
+  color: var(--black);
+}
+.grey:hover {
+  color: var(--black);
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+.bg-attach {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.btn {
+  text-transform: uppercase;
+}
+.color-green {
+  color: var(--green);
+}
+.light {
+  font-weight: 300;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.light {
+  background: #ffffff;
+}
+.checkout {
+  background: #f1f1f1;
+}
+.checkout .main-title {
+  margin: 33px 0 36px;
+}
+.checkout h6 {
+  font-weight: 700;
+}
+.checkout h6,
+.checkout p {
+  text-align: left;
+}
+.checkout .card.checkouts {
+  margin: 10px 0;
+  -webkit-box-shadow: 0px 0px 27px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 27px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 27px -4px rgba(0, 0, 0, 0.75);
+}
+.checkout .card.checkouts .list-group-flush > .list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+.checkout .card.checkouts .list-group.list-group-horizontal > .list-group-item {
+  border: 0;
+  padding: 0;
+}
+.checkout .card.checkouts p,
+.checkout .card.checkouts h6 {
+  font-weight: 700;
+}
+.checkout .card.checkouts h6 {
+  display: inline;
+}
+.checkout .card.checkouts .label p {
+  font-weight: 400;
+}
+.checkout .card.checkouts .edit {
+  padding: 5px 10px;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  float: right;
+}
+.checkout .card.checkouts .product-details {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.checkout .card.checkouts .product-details p {
+  font-weight: 400;
+}
+.checkout .card.checkouts .product-details .product-img {
+  width: 20%;
+  margin-right: 20px;
+}
