@@ -6,6 +6,10 @@
 
 .cart {
 
+    .border-bottom {
+        border-color: #dfdfdf;
+    }
+
     background: #fff;
 
     h6 {
@@ -16,6 +20,7 @@
     p {
         text-align: left;
     }
+
 
     .summary {
         padding: 10px 0;
@@ -39,16 +44,86 @@
                 border: 0;
             }
         }
+
         .items-list {
             .list-group-item {
                 border-width: 1px 0 0;
             }
 
         }
+
+        .product-details {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+
+            .product-img {
+                width: 20%;
+                margin-right: 20px;
+            }
+
+        }
+
+        .detail-btns {
+            margin-left: 25%;
+            .btn{
+                margin-right: 10px;
+                padding: 4px 12px;
+                font-size: 11px;
+            }
+            .shade{
+                background: #f6f6f6;
+            }
+        }
+
+        .items {
+            h6 {
+                text-align: center;
+            }
+
+            #quantity {
+                width: 50%;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+
+        .form-control:focus {
+            border-color: #ced4da;
+            box-shadow: none;
+        }
+
+        .price {
+
+            h6,
+            p {
+                text-align: center;
+            }
+
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .border-btn {
+        background: #fefefe;
+        border: 1px solid #cdcdcd;
+        padding: 6px 19px;
+        font-weight: 500;
+        .radius(10px);
+
+        .transition(0.3s);
+
+        &:hover {
+            background: #f8f8f8;
+
+        }
     }
 
     .card.checkouts {
         margin: 10px 0;
+        .shadow(0px 0px 27px -4px rgba(0, 0, 0, 0.75));
 
         .list-group-flush>.list-group-item {
             padding-left: 0;
@@ -70,6 +145,11 @@
                 font-weight: 400;
                 font-style: italic;
             }
+        }
+
+        .btn {
+            width: 90%;
+            padding: 5px;
         }
     }
 
