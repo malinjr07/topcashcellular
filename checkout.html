@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="./vendor/css/main.css">
     <!-- Component Based CSS -->
     <link rel="stylesheet" href="vendor/css/checkout.css">
+    <link rel="stylesheet" href="vendor/css/auth.css">
     <link rel="stylesheet" type="text/css" href="./vendor/css/responsive.css">
     <meta property="og:title" content="">
     <title>Top Cash Cellular</title>
@@ -111,6 +112,135 @@
         <div class="container section-padding ">
             <div class="row">
                 <div class="col-xl-8">
+                    <form action="">
+                        <div class="accordion" id="checkOut">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Account
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="collapse accounts show" aria-labelledby="headingOne" data-parent="#checkOut">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-5">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h6 class="card-title">Continue As Geust</h6>
+                                                        <div class="form-group">
+                                                            <label for="mails">Email</label>
+                                                            <input type="email" class="form-control" id="mails">
+                                                        </div>
+                                                        <button type="button" class="btn green">Continue As Geust</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-7">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h6 class="card-title">Customer Login</h6>
+                                                        <div class="tabs">
+                                                            <!-- Sign In -->
+                                                            <input type="radio" class="tabs__button" name="signForm" id="signIn" checked />
+                                                            <label class="tabs__text" for="signIn">LogIn</label>
+                                                            <div class="tabs__content">
+                                                                <form class="form">
+                                                                    <div class="input-group">
+                                                                        <label class="input-group__label" for="email">Email</label>
+                                                                        <input class="input-group__input" type="email" placeholder="&nbsp;" name="email" id="email" autocomplete="off" required />
+                                                                    </div>
+                                                                    <div class="input-group">
+                                                                        <label class="input-group__label" for="password">Password</label>
+                                                                        <input class="input-group__input" type="password" name="password" placeholder="&nbsp;" id="password" required />
+                                                                    </div>
+                                                                    <!-- Normally I would create a grid system or use an existing to cater this issue -->
+                                                                    <div class="flex-space-between">
+                                                                        <label class="flex-align-center"><input type="checkbox" /> Remember Me</label>
+                                                                        <p><a href="#">Forgot Password?</a></p>
+                                                                    </div>
+                                                                    <button type="submit">Login</button>
+                                                                </form>
+                                                                <div class="api-login">
+                                                                    <p>Or, Login With : </p>
+                                                                    <ul>
+                                                                        <li><a href="#"> <i class="fab fa-google"></i> Google </a></li>
+                                                                        <li><a href="#"> <i class="fab fa-facebook-square"></i> Facebook </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Sign Up -->
+                                                            <input type="radio" class="tabs__button" name="signForm" id="signUp" />
+                                                            <label class="tabs__text" for="signUp">Sign Up</label>
+                                                            <div class="tabs__content">
+                                                                <form class="form">
+                                                                    <div class="input-group">
+                                                                        <label class="input-group__label" for="email">Email</label>
+                                                                        <input class="input-group__input" type="email" placeholder="&nbsp;" name="username" id="username" autocomplete="off" required />
+                                                                    </div>
+                                                                    <div class="input-group">
+                                                                        <label class="input-group__label" for="password">Password</label>
+                                                                        <input class="input-group__input" type="password" name="password" placeholder="&nbsp;" id="password" required />
+                                                                    </div>
+                                                                    <div class="input-group">
+                                                                        <label class="input-group__label" for="retype-password">Confirm Password</label>
+                                                                        <input class="input-group__input" type="password" name="retype-password" placeholder="&nbsp;" id="retype-password" required />
+                                                                    </div>
+                                                                    <button type="submit">Register</button>
+                                                                </form>
+                                                                <div class="api-login">
+                                                                    <p>Or, Login With : </p>
+                                                                    <ul>
+                                                                        <li><a href="#"> <i class="fab fa-google"></i> Google </a></li>
+                                                                        <li><a href="#"> <i class="fab fa-facebook-square"></i> Facebook </a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="payments">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#transections" aria-expanded="false" aria-controls="transections">
+                                        Payments
+                                    </button>
+                                </div>
+                                <div id="transections" class="collapse" aria-labelledby="payments" data-parent="#checkOut">
+                                    <div class="card-body">
+                                        Some placeholder content for the second accordion panel. This panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="delivery">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#shipping" aria-expanded="false" aria-controls="shipping">
+                                        Shipping
+                                    </button>
+                                </div>
+                                <div id="shipping" class="collapse" aria-labelledby="delivery" data-parent="#checkOut">
+                                    <div class="card-body">
+                                        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="agreement">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#terms" aria-expanded="false" aria-controls="terms">
+                                        Options and terms
+                                    </button>
+                                </div>
+                                <div id="terms" class="collapse" aria-labelledby="agreement" data-parent="#checkOut">
+                                    <div class="card-body">
+                                        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-xl-4">
                     <div class="card checkouts">
