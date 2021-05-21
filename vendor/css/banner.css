@@ -55,6 +55,9 @@ p,
 .btn {
   text-transform: uppercase;
 }
+.btn:focus {
+  box-shadow: none;
+}
 .color-green {
   color: var(--green);
 }

@@ -55,6 +55,9 @@ p,
 .btn {
   text-transform: uppercase;
 }
+.btn:focus {
+  box-shadow: none;
+}
 .color-green {
   color: var(--green);
 }
@@ -70,6 +73,70 @@ p,
 .support .main-title {
   margin: 33px 0 36px;
 }
-.support .support-area {
+.support .support-area .heading-box {
   padding: 32px 0;
+}
+.support .support-area .heading-box h3 {
+  font-size: 27px;
+  margin: 8px 0;
+}
+.support .support-area .heading-box p {
+  font-size: 16px;
+}
+.support .support-area .title {
+  margin: 24px 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #ccc;
+}
+.support .support-area .title h3 {
+  font-size: 23px;
+}
+.support .support-area .helpdesk {
+  margin: 8px 0;
+}
+.support .support-area .helpdesk .ticketQu p {
+  font-size: 20px;
+  color: #f1852a;
+}
+.support .support-area .helpdesk .ticketAns .card {
+  background: transparent;
+  border: none;
+  padding-top: 0;
+}
+.support .contact {
+  padding-bottom: 96px;
+}
+.support .contact .contact-details {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.support .contact .contact-details h3 {
+  font-size: 32px;
+  margin: 21.5px 0;
+}
+.support .contact .contact-details p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.support .contact .contact-details .address {
+  padding: 0 20px;
+  color: #6f6f6f;
+  margin-bottom: 40px;
+}
+.support .contact .contact-details .address p {
+  font-size: 16px;
+}
+.support .contact form label {
+  font-size: 14px;
+  color: #4d4d4d;
+}
+.support .contact form .form-boxes {
+  background-color: transparent;
+  border-radius: 0;
+  border-color: #ccc;
+}
+.support .contact form .btn {
+  float: right;
+  padding: 8px 21px;
+  font-size: 14px;
 }

@@ -55,6 +55,9 @@ p,
 .btn {
   text-transform: uppercase;
 }
+.btn:focus {
+  box-shadow: none;
+}
 .color-green {
   color: var(--green);
 }
@@ -111,6 +114,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
+}
+textarea {
+  resize: none;
 }
 @-moz-keyframes upDown {
   0% {
