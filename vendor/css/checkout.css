@@ -205,6 +205,20 @@ p,
   border-color: #b0b0b0;
   color: #464646;
 }
+.checkout .accordion .card .terms .textarea h6 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.checkout .accordion .card .terms .textarea p {
+  font-size: 11px;
+  color: #999;
+}
+.checkout .accordion .card .terms .check-btn {
+  width: 100%;
+  padding: 8px auto;
+}
 .checkout .card.checkouts {
   margin: 10px 0;
   -webkit-box-shadow: 0px 0px 27px -4px rgba(0, 0, 0, 0.75);
