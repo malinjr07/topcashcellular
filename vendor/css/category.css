@@ -80,6 +80,7 @@ ul,
 ol {
   list-style-type: none;
 }
+.btn-link:hover,
 a:hover,
 a {
   text-decoration: none;
