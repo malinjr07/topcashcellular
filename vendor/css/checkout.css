@@ -95,6 +95,17 @@ p,
   color: var(--black);
   font-size: 14px;
 }
+.checkout .accordion .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: var(--green);
+  background-color: var(--green);
+}
+.checkout .accordion .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 .2rem #ACCF29;
+}
+.checkout .accordion .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #dddddd;
+}
 .checkout .accordion span.mini {
   font-weight: 500;
   font-size: 14px;
@@ -217,7 +228,14 @@ p,
 }
 .checkout .accordion .card .terms .check-btn {
   width: 100%;
-  padding: 8px auto;
+  padding: 8px;
+  background: transparent;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+}
+.checkout .accordion .card .terms .note {
+  font-size: 13px;
+  color: #f1852a;
 }
 .checkout .card.checkouts {
   margin: 10px 0;

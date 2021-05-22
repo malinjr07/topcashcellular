@@ -116,11 +116,11 @@
                         <div class="accordion" id="checkOut">
                             <div class="card">
                                 <div class="card-header" id="accounts">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Account<span class="mini"> - mail@mail.com</span>
                                     </button>
                                 </div>
-                                <div id="collapseOne" class="collapse accounts" aria-labelledby="accounts" data-parent="#checkOut">
+                                <div id="collapseOne" class="collapse show accounts" aria-labelledby="accounts" data-parent="#checkOut">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-xl-5">
@@ -205,9 +205,9 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" id="payments">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#transections" aria-expanded="false" aria-controls="transections">
+                                    <h5 class="btn btn-link btn-block text-left">
                                         Payments<span class="mini"> - PayPal</span>
-                                    </button>
+                                    </h5>
                                 </div>
                                 <div id="transections" class="collapse payments" aria-labelledby="payments" data-parent="#checkOut">
                                     <div class="card-body">
@@ -268,9 +268,9 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" id="delivery">
-                                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#shipping" aria-expanded="false" aria-controls="shipping">
+                                    <h5 class="btn btn-link btn-block text-left">
                                         Shipping
-                                    </button>
+                                    </h5>
                                 </div>
                                 <div id="shipping" class="collapse shipping " aria-labelledby="delivery" data-parent="#checkOut">
                                     <div class="card-body">
@@ -387,7 +387,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xl-12">
-                                                <button type="button" data-toggle="collapse" data-target="#shipping" aria-expanded="false" aria-controls="shipping" class="btn green">Next</button>
+                                                <button type="button" data-toggle="collapse" data-target="#terms" aria-expanded="true" aria-controls="terms" class="btn green">Next</button>
                                             </div>
                                         </div>
                                     </div>
@@ -395,11 +395,11 @@
                             </div>
                             <div class="card">
                                 <div class="card-header" id="agreement">
-                                    <button class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#terms" aria-expanded="true" aria-controls="terms">
-                                        Options and terms
-                                    </button>
+                                    <h5 class="btn btn-link btn-block text-left ">
+                                        Options &amp; terms
+                                    </h5>
                                 </div>
-                                <div id="terms" class="collapse terms show" aria-labelledby="agreement" data-parent="#checkOut">
+                                <div id="terms" class="collapse terms" aria-labelledby="agreement" data-parent="#checkOut">
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col-xl-12">
@@ -419,7 +419,7 @@
                                                                 <div class="form-row">
                                                                     <div class="col-xl-7">
                                                                         <div class="form-group">
-                                                                            <button type="button" class="check-btn mb-3">
+                                                                            <button type="button" class="check-btn yes mb-3">
                                                                                 <div class="custom-control custom-radio custom-control-inline">
                                                                                     <input type="radio" id="yes" name="insurance" class="custom-control-input">
                                                                                     <label class="custom-control-label" for="yes">Yes, Add Insurance</label>
@@ -429,7 +429,7 @@
                                                                     </div>
                                                                     <div class="col-xl-5">
                                                                         <div class="form-group">
-                                                                            <button type="button" class="check-btn mb-3">
+                                                                            <button type="button" class="check-btn no mb-3">
                                                                                 <div class="custom-control custom-radio custom-control-inline">
                                                                                     <input type="radio" id="no" name="insurance" class="custom-control-input">
                                                                                     <label class="custom-control-label" for="no">No, thanks</label>
