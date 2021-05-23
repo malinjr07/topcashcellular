@@ -88,6 +88,20 @@ textarea {
         }
     }
 
+    .custom-control-input:checked~.custom-control-label::before {
+        color: #fff;
+        border-color: var(--green);
+        background-color: var(--green);
+    }
+
+    .custom-control-input:focus~.custom-control-label::before {
+        box-shadow: none;
+    }
+
+    .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+        border-color: #dddddd;
+    }
+
     .section-padding {
         padding: 80px 0 96px;
     }

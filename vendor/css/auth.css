@@ -71,7 +71,6 @@ p,
   font-weight: 700;
 }
 .auth {
-  height: 50vh;
   display: flex;
   align-items: center;
 }
