@@ -191,3 +191,110 @@ p,
   width: 90%;
   padding: 5px;
 }
+@media (max-width: 575.99px) {
+  .cart {
+    background: #fff;
+  }
+  .cart .border-bottom {
+    border-color: #dfdfdf;
+  }
+  .cart h6 {
+    font-weight: 700;
+  }
+  .cart h6,
+  .cart p {
+    text-align: left;
+  }
+  .cart .summary {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .cart .summary .list-group {
+    width: 100%;
+  }
+  .cart .summary h6 {
+    font-size: 14px;
+  }
+  .cart .summary .details {
+    width: 40%;
+  }
+  .cart .summary .price,
+  .cart .summary .items {
+    width: 30%;
+  }
+  .cart .summary .headings .list-group-item {
+    border: 0;
+  }
+  .cart .summary .items-list .list-group-item {
+    padding: 10px 0;
+  }
+  .cart .summary .items-list .list-group-item h6 {
+    font-size: 12px;
+  }
+  .cart .summary .items-list .list-group-item p {
+    font-size: 10px;
+  }
+  .cart .summary .product-details {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .cart .summary .product-details .product-img {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .cart .summary .detail-btns {
+    margin-left: 35%;
+  }
+  .cart .summary .detail-btns .btn {
+    margin-right: 5px;
+    padding: 4px 10px;
+    font-size: 9px;
+  }
+  .cart .summary .detail-btns .shade {
+    background: #f6f6f6;
+  }
+  .cart .summary .items h6 {
+    text-align: center;
+  }
+  .cart .summary .items #quantity {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .cart .summary .form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+  }
+  .cart .summary .price h6,
+  .cart .summary .price p {
+    text-align: center;
+  }
+  .cart .summary .price p {
+    font-size: 16px !important;
+    margin-top: 20px;
+  }
+  .cart .border-btn {
+    padding: 6px 19px;
+  }
+  .cart .card.checkouts {
+    margin: 20px 0;
+    width: 90%;
+  }
+  .cart .card.checkouts .list-group.list-group-horizontal > .list-group-item {
+    border: 0;
+    padding: 0;
+  }
+  .cart .card.checkouts p,
+  .cart .card.checkouts h6 {
+    font-weight: 700;
+  }
+  .cart .card.checkouts .label p {
+    font-weight: 400;
+    font-style: italic;
+  }
+  .cart .card.checkouts .btn {
+    width: 90%;
+    padding: 5px;
+  }
+}

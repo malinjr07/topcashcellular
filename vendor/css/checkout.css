@@ -269,3 +269,109 @@ p,
   width: 20%;
   margin-right: 20px;
 }
+@media (max-width: 992px) {
+  .checkout .main-title {
+    margin: 33px 0 36px;
+  }
+  .checkout .accordion .card-header .btn {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .checkout .accordion span.mini {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .checkout .accordion .btn.green {
+    padding: 5px 10px;
+  }
+  .checkout .accordion .card .card-title {
+    top: -11px;
+    left: 10px;
+    padding: 0 5px;
+    font-weight: 600;
+  }
+  .checkout .accordion .card .accounts .card-body .tabs .tabs__text {
+    padding: 10px 30px;
+  }
+  .checkout .accordion .card .payments .card-body .input-group {
+    margin-top: 20px;
+  }
+  .checkout .accordion .card .payments .card-body .tabs .tabs__content {
+    padding: 20px 30px 30px;
+    margin-top: 20px;
+  }
+  .checkout .accordion .card .payments .card-body .tabs .tabs__text {
+    padding: 10px 30px;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  .checkout .accordion .card .payments .card-body .tabs .input-group__label {
+    font-size: 14px;
+    top: 0;
+    line-height: 40px;
+    left: 5px;
+    padding: 0 5px;
+  }
+  .checkout .accordion .card .payments .card-body .tabs .input-group__input {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    padding: 0 10px;
+  }
+  .checkout .accordion .card .payments .card-body .tabs .input-group__input:not(:-moz-placeholder-shown) + label,
+  .checkout .accordion .card .payments .card-body .tabs .input-group__input:not(:-ms-input-placeholder) + label {
+    line-height: 10px;
+    top: -5px;
+    font-size: 12px;
+  }
+  .checkout .accordion .card .payments .card-body .tabs .input-group__input:not(:placeholder-shown) + label,
+  .checkout .accordion .card .payments .card-body .tabs .input-group__input:focus + label {
+    line-height: 10px;
+    top: -5px;
+    font-size: 12px;
+  }
+  .checkout .accordion .card .shipping .card-body .main-card {
+    margin-bottom: 20px;
+  }
+  .checkout .accordion .card .shipping .card-body .main-card .check-btn {
+    padding: 6px 18px 6px 30px;
+    border-radius: 4px;
+  }
+  .checkout .accordion .card .shipping .card-body .main-card .textarea h6 {
+    margin-bottom: 10px;
+  }
+  .checkout .accordion .card .shipping .card-body .main-card .textarea p {
+    font-size: 11px;
+  }
+  .checkout .accordion .card .shipping .card-body .main-card .check-content {
+    padding: 14px;
+    padding-right: 24px;
+  }
+  .checkout .accordion .card .terms .textarea h6 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .checkout .accordion .card .terms .textarea p {
+    font-size: 11px;
+  }
+  .checkout .accordion .card .terms .check-btn {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .checkout .accordion .card .terms .note {
+    font-size: 13px;
+  }
+  .checkout .card.checkouts {
+    margin: 10px 0;
+    width: 90%;
+  }
+  .checkout .card.checkouts .edit {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .checkout .card.checkouts .product-details .product-img {
+    width: 20%;
+    margin-right: 20px;
+  }
+}
