@@ -70,53 +70,52 @@ p,
 .bold {
   font-weight: 700;
 }
-@media (min-width: 1280px) {
-  .hero-banner {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: var(--white);
-    text-align: center;
-  }
-  .hero-banner .overlay {
-    padding: 24px 0;
-    background: rgba(34, 34, 34, 0.9);
-  }
-  .hero-banner .overlay .main-text {
-    margin-top: 40px;
-    margin-bottom: 8px;
-  }
-  .hero-banner .overlay .main-text h1 {
-    font-weight: 700;
-  }
-  .hero-banner .overlay .mini-title {
-    margin: 24px 0;
-  }
-  .hero-banner .overlay .mini-title h4 {
-    color: #d4d4d4;
-    font-weight: 400;
-  }
-  .hero-banner .overlay .btn {
-    padding: 16px 32px;
-    margin: 0 auto;
-  }
-  .hero-banner .overlay .feedback {
-    display: block;
-    margin: 20px 0;
-    font-size: 24px;
-    font-weight: 700;
-    font-style: italic;
-    color: #d4d4d4;
-  }
-  .hero-banner .overlay .bottom-section {
-    background: transparent;
-    border: 0;
-    color: #d4d4d4;
-    font-size: 70px;
-    -webkit-animation: upDown 3s ease-in-out 1s infinite;
-    -moz-animation: upDown 3s ease-in-out 1s infinite;
-    -ms-animation: upDown 3s ease-in-out 1s infinite;
-    animation: upDown 3s ease-in-out 1s infinite;
-  }
+.hero-banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--white);
+  text-align: center;
+}
+.hero-banner .overlay {
+  padding: 24px 0;
+  background: rgba(34, 34, 34, 0.9);
+}
+.hero-banner .overlay .main-text {
+  margin: 0;
+}
+.hero-banner .overlay .main-text h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+.hero-banner .overlay .mini-title {
+  margin: 24px 0;
+}
+.hero-banner .overlay .mini-title h4 {
+  color: #d4d4d4;
+  font-weight: 400;
+  font-size: 20px;
+}
+.hero-banner .overlay .btn {
+  padding: 16px 32px;
+  margin: 16px auto;
+}
+.hero-banner .overlay .feedback {
+  display: block;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  color: #d4d4d4;
+}
+.hero-banner .overlay .bottom-section {
+  background: transparent;
+  border: 0;
+  color: #d4d4d4;
+  font-size: 70px;
+  -webkit-animation: upDown 3s ease-in-out 1s infinite;
+  -moz-animation: upDown 3s ease-in-out 1s infinite;
+  -ms-animation: upDown 3s ease-in-out 1s infinite;
+  animation: upDown 3s ease-in-out 1s infinite;
 }

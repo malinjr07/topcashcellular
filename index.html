@@ -48,8 +48,11 @@
     <header class="">
         <div class="container">
             <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href="#"><img src="vendor/img/Logo.png" alt="Logo" class="img-fluid" /></a>
-                <div class="collapse navbar-collapse">
+                <a class="navbar-brand" href="#"> <img src="vendor/img/Logo.png" alt="Logo" class="img-fluid" /> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item has-dropdown">
                             <a class="nav-link" href="#">Start Selling</a>
@@ -81,7 +84,13 @@
                             <a class="nav-link" href="#">Login/Signup</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#">Account</a>
+                        </li>
+                        <li class="nav-item d-none d-md-block">
                             <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li class="nav-item d-block d-md-none">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i> Search</a>
                         </li>
                         <li class="nav-item boxed">
                             <a class="nav-link" href="#"> <span class="number">0</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.84 30.09">
@@ -106,7 +115,7 @@
                     <div class="col-xl-8 offset-xl-2">
                         <div class="main-text">
                             <h1>
-                                TRADE-IN YOUR USED ELECTRONICS for CASH
+                                TRADE-IN YOUR USED ELECTRONICS <span class="light">for <span class="color-green">CASH</span> </span> 
                             </h1>
                         </div>
                     </div>
@@ -138,7 +147,7 @@
             <div class="row">
                 <div class="col-xl-8 offset-xl-2">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-xl-4">
+                        <div class="col-md-4 col-sm-6">
                             <div class="steps">
                                 <div class="icon">
                                     <img src="vendor/img/1-how-it-works.png" alt="how-it-works" class="img-fluid" />
@@ -154,7 +163,7 @@
                                 <div class="forward"> <i class="fas fa-reply"></i> </div>
                             </div>
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-md-4 col-sm-6">
                             <div class="steps">
                                 <div class="icon">
                                     <img src="vendor/img/1-how-it-works.png" alt="how-it-works" class="img-fluid" />
@@ -170,7 +179,7 @@
                                 <div class="forward"> <i class="fas fa-reply"></i> </div>
                             </div>
                         </div>
-                        <div class="col-xl-4">
+                        <div class="col-md-4 col-sm-6">
                             <div class="steps">
                                 <div class="icon">
                                     <img src="vendor/img/1-how-it-works.png" alt="how-it-works" class="img-fluid" />
@@ -206,25 +215,25 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 category-list">
+                <div class="col-md-4 col-6 category-list">
                     <a href="#" class="category-item">
                         <img src="vendor/img/samsung.png" class="img-fluid" alt="samsung.png">
                         <span class="category-title"> iPhone </span>
                     </a>
                 </div>
-                <div class="col-xl-4 category-list">
+                <div class="col-md-4 col-6 category-list">
                     <a href="#" class="category-item">
                         <img src="vendor/img/samsung.png" class="img-fluid" alt="samsung.png">
                         <span class="category-title"> iPhone </span>
                     </a>
                 </div>
-                <div class="col-xl-4 category-list">
+                <div class="col-md-4 col-6 category-list">
                     <a href="#" class="category-item">
                         <img src="vendor/img/samsung.png" class="img-fluid" alt="samsung.png">
                         <span class="category-title"> iPhone </span>
                     </a>
                 </div>
-                <div class="col-xl-4 category-list">
+                <div class="col-md-4 col-6 category-list">
                     <a href="#" class="category-item">
                         <img src="vendor/img/samsung.png" class="img-fluid" alt="samsung.png">
                         <span class="category-title"> iPhone </span>
@@ -248,7 +257,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-xl-3">
+                <div class="col-md-3 col-sm-6">
                     <div class="steps">
                         <div class="icon">
                             <img src="vendor/img/1-why-us.png" alt="why-us" class="img-fluid" />
@@ -263,7 +272,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-md-3 col-sm-6">
                     <div class="steps">
                         <div class="icon">
                             <img src="vendor/img/1-why-us.png" alt="why-us" class="img-fluid" />
@@ -278,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-md-3 col-sm-6">
                     <div class="steps">
                         <div class="icon">
                             <img src="vendor/img/1-why-us.png" alt="why-us" class="img-fluid" />
@@ -293,7 +302,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-md-3 col-sm-6">
                     <div class="steps">
                         <div class="icon">
                             <img src="vendor/img/1-why-us.png" alt="why-us" class="img-fluid" />
@@ -322,7 +331,7 @@
     <footer>
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-3">
                     <div class="footer-parts">
                         <h4 class="head">CUSTOMER SERVICE</h4>
                         <div class="content">
@@ -339,7 +348,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-2">
+                <div class="col-xl-2 col-md-3">
                     <div class="footer-parts">
                         <h4 class="head">connect with us</h4>
                         <div class="content">
@@ -360,7 +369,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="footer-parts">
                         <h4 class="head">subscribe</h4>
                         <div class="content">
@@ -390,10 +399,10 @@
         <div class="bottom">
             <div class="container">
                 <div class="row d-flex justify-content-between">
-                    <div class="col-xl-6">
+                    <div class="col-md-6">
                         <p>&copy; 2020–2021 topcashcellular.com LLC — All Rights Reserved</p>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-md-4">
                         <p>Application Developed By <a href="">Maruf</a> &amp; <a href="">Mujahid</a> </p>
                     </div>
                 </div>

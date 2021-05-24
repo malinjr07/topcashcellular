@@ -1,23 +1,10 @@
-@import "main.less";
+@import "_mixin.less";
+
 .category {
 
     .category-list {
         background: var(--white);
         border-bottom: 1px solid #dfdfdf;
-
-        &:nth-child(3n+1),
-        &:nth-child(3n+2) {
-            border-right: 1px solid #dfdfdf;
-        }
-
-        &:nth-child(3n+0) {
-            border-right: none !important;
-        }
-
-        &:nth-child(3n+1):nth-last-child(-n+3),
-        &:nth-child(3n+1):nth-last-child(-n+3)~div {
-            border-bottom: none;
-        }
 
         text-align: center;
 
@@ -49,6 +36,89 @@
 
                 img {
                     .transform(translateY(10px))
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .category {
+
+        .category-list {
+
+            &:nth-child(3n+1),
+            &:nth-child(3n+2) {
+                border-right: 1px solid #dfdfdf;
+            }
+
+            &:nth-child(3n+0) {
+                border-right: none !important;
+            }
+
+            &:nth-child(3n+1):nth-last-child(-n+3),
+            &:nth-child(3n+1):nth-last-child(-n+3)~div {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+    .category {
+
+        .category-list {
+            .category-item {
+
+                img {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {}
+
+@media (min-width: 576px) and (max-width: 767.99px) {}
+
+@media (max-width: 992px) {
+    .category {
+
+        .category-list {
+
+            &:nth-child(odd) {
+                border-right: 1px solid #dfdfdf;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:nth-child(even) {
+                border-bottom: 1px solid #dfdfdf;
+            }
+
+            .category-item {
+
+                img {
+                    height: auto;
+                }
+
+
+                .category-title {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+
+                &:hover {
+                    .category-title {
+                        color: var(--green);
+                    }
+
+                    img {
+                        .transform(translateY(10px))
+                    }
                 }
             }
         }
