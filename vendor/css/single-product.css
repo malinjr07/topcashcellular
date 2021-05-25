@@ -75,6 +75,9 @@ h6,
 h5 {
   font-weight: 700;
 }
+.product .col-xl-3 {
+  padding: 0;
+}
 .product .heading {
   margin-bottom: 40px;
 }
@@ -98,23 +101,29 @@ h5 {
   margin-left: 10px;
   margin-bottom: 10px;
 }
-.product .terms .questions .answers li button.answer {
+.product .terms .questions .answers li .options {
   padding: 8px;
   background: transparent;
-  border: 2px solid #d3d3d3;
+  cursor: pointer;
 }
-.product .terms .questions .answers li button.answer p {
+.product .terms .questions .answers li .options p {
   padding: 5px 10px;
 }
-.product .terms .questions .answers li button.answer img {
+.product .terms .questions .answers li .options img {
   object-fit: contain;
 }
-.product .terms .questions .answers li button.answer.active {
+.product .terms .questions .answers li [type="radio"] {
+  display: none;
+}
+.product .terms .questions .answers li [type="radio"]:not(:checked) + .options {
+  border: 2px solid #d3d3d3;
+}
+.product .terms .questions .answers li [type="radio"]:checked + .options {
   border: 2px solid var(--green);
 }
 .product .side-box {
   background: #f4f4f4;
-  padding: 31px 0 26px;
+  padding: 31px 15px 26px;
 }
 .product .side-box .line-bottom {
   position: relative;

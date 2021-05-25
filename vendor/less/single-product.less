@@ -7,10 +7,11 @@ h5 {
 }
 
 .product {
+    .col-xl-3{
+        padding: 0;
+    }
     .heading {
         margin-bottom: 40px;
-
-
 
         h4 {
             font-size: 26px;
@@ -39,10 +40,10 @@ h5 {
                     margin-left: 10px;
                     margin-bottom: 10px;
 
-                    button.answer {
+                    .options {
                         padding: 8px;
                         background: transparent;
-                        border: 2px solid #d3d3d3;
+                        cursor: pointer;
 
                         p {
                             padding: 5px 10px;
@@ -53,8 +54,18 @@ h5 {
                         }
                     }
 
-                    button.answer.active {
-                        border: 2px solid var(--green);
+                    [type="radio"] {
+                        display: none;
+
+                        &:not(:checked)+.options {
+                            border: 2px solid #d3d3d3;
+                        }
+
+
+                        &:checked+.options {
+                            border: 2px solid var(--green);
+                        }
+
                     }
                 }
             }
@@ -63,7 +74,7 @@ h5 {
 
     .side-box {
         background: #f4f4f4;
-        padding: 31px 0 26px;
+        padding: 31px 15px 26px;
 
         .line-bottom {
             position: relative;

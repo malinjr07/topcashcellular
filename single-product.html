@@ -110,110 +110,150 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-4">
-                    <div class="image">
-                        <img src="vendor/img/iphone.png" alt="iPhone" class="img-fluid" />
-                    </div>
-                </div>
-                <div class="col-xl-5">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="terms">
-                                <div class="title">
-                                    <h5>Please select your carrier</h5>
-                                </div>
-                                <div class="questions">
-                                    <ul class="answers">
-                                        <li class=""><button type="button" class="answer active"> <img src="./vendor/img/logo-at-t.png" class="img-fluid" alt=""> </button>
-                                        </li>
-                                        <li class=""><button type="button" class="answer"> <img src="./vendor/img/logo-sprint.png" class="img-fluid" alt=""> </button>
-                                        </li>
-                                        <li class=""><button type="button" class="answer"> <img src="./vendor/img/logo-unlocked.png" class="img-fluid" alt=""> </button>
-                                        </li>
-                                        <li class=""><button type="button" class="answer"> <img src="./vendor/img/logo-other.png" class="img-fluid" alt=""> </button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="image">
+                            <img src="vendor/img/iphone.png" alt="iPhone" class="img-fluid" />
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="terms">
-                                <div class="title">
-                                    <h5>Please select the Storage Capacity</h5>
-                                </div>
-                                <div class="questions">
-                                    <ul class="answers">
-                                        <li class=""><button type="button" class="answer">
-                                                <p>128GB</p>
-                                            </button>
-                                        </li>
-                                        <li class=""><button type="button" class="answer">
-                                                <p>256GB</p>
-                                            </button>
-                                        </li>
-                                        <li class=""><button type="button" class="answer">
-                                                <p>512GB</p>
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="terms">
-                                <div class="title">
-                                    <h5>Please select the condition</h5>
-                                </div>
-                                <div class="questions"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3">
-                    <div class="side-box">
+                    <div class="col-xl-5">
                         <div class="row">
                             <div class="col-xl-12">
-                                <div class="headings line-bottom">
-                                    <h5>Item Summary</h5>
-                                </div>
-                                <div class="detail line-bottom">
-                                    <h6>Device - <span class="contexts"> iPhone 12 Pro Max (256GB) </span> </h6> 
-                                    <h6>Storage - <span class="contexts"> 256GB </span> </h6> 
-                                    <h6>Network - <span class="contexts"> Unlocked </span> </h6> 
-                                    <h6>Condition - <span class="contexts"> Faulty </span> </h6>
+                                <div class="terms">
+                                    <div class="title">
+                                        <h5>Please select your carrier</h5>
+                                    </div>
+                                    <div class="questions">
+                                        <ul class="answers">
+                                            <li class="">
+                                                <input type="radio" name="carrier" id="at&t">
+                                                <label class="options" for="at&t">
+                                                    <div class="optImage">
+                                                        <img src="./vendor/img/logo-at-t.png" class="img-fluid" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="">
+                                                <input type="radio" name="carrier" id="sprint">
+                                                <label class="options" for="sprint">
+                                                    <div class="optImage">
+                                                        <img src="./vendor/img/logo-sprint.png" class="img-fluid" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="">
+                                                <input type="radio" name="carrier" id="unlocked">
+                                                <label class="options" for="unlocked">
+                                                    <div class="optImage">
+                                                        <img src="./vendor/img/logo-unlocked.png" class="img-fluid" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="">
+                                                <input type="radio" name="carrier" id="other">
+                                                <label class="options" for="other">
+                                                    <div class="optImage">
+                                                        <img src="./vendor/img/logo-other.png" class="img-fluid" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row text-center">
+                        <div class="row">
                             <div class="col-xl-12">
-                                <div class="headings mb-0">
-                                    <h6>We'll pay you</h6>
-                                </div>
-                                <div class="detail">
-                                    <h2>$271.80</h2>
-                                </div>
-                                <div class="submission">
-                                    <button class="btn green" type="submit">
-                                        Sell this device
-                                    </button>
-                                </div>
                                 <div class="terms">
-                                    <div class="icon">
-                                        <img src="vendor/img/iCloud.webp" class="img-fluid" alt="iCloud">
+                                    <div class="title">
+                                        <h5>Please select the Storage Capacity</h5>
                                     </div>
-                                    <div class="text text-left">
-                                        <div class="term-head">
-                                            <p>Selling an Apple Device?</p>
+                                    <div class="questions">
+                                        <ul class="answers">
+                                            <li class="">
+                                                <input type="radio" name="storage" id="128gb">
+                                                <label class="options" for="128gb">
+                                                    <div class="optText">
+                                                        <p>128GB</p>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="">
+                                                <input type="radio" name="storage" id="256gb">
+                                                <label class="options" for="256gb">
+                                                    <div class="optText">
+                                                        <p>256GB</p>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li class="">
+                                                <input type="radio" name="storage" id="512gb">
+                                                <label class="options" for="512gb">
+                                                    <div class="optText">
+                                                        <p>512GB</p>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="terms">
+                                    <div class="title">
+                                        <h5>Please select the condition</h5>
+                                    </div>
+                                    <div class="questions">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="side-box">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="headings line-bottom">
+                                        <h5>Item Summary</h5>
+                                    </div>
+                                    <div class="detail line-bottom">
+                                        <h6>Device - <span class="contexts"> iPhone 12 Pro Max (256GB) </span> </h6>
+                                        <h6>Storage - <span class="contexts"> 256GB </span> </h6>
+                                        <h6>Network - <span class="contexts"> Unlocked </span> </h6>
+                                        <h6>Condition - <span class="contexts"> Faulty </span> </h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <div class="col-xl-12">
+                                    <div class="headings mb-0">
+                                        <h6>We'll pay you</h6>
+                                    </div>
+                                    <div class="detail">
+                                        <h2>$271.80</h2>
+                                    </div>
+                                    <div class="submission">
+                                        <button class="btn green" type="submit">
+                                            Sell this device
+                                        </button>
+                                    </div>
+                                    <div class="terms">
+                                        <div class="icon">
+                                            <img src="vendor/img/iCloud.webp" class="img-fluid" alt="iCloud">
                                         </div>
-                                        <div class="term-text">
-                                            <p>
-                                                Please REMOVE your iCloud account before sending your device to us.
-                                            </p>
+                                        <div class="text text-left">
+                                            <div class="term-head">
+                                                <p>Selling an Apple Device?</p>
+                                            </div>
+                                            <div class="term-text">
+                                                <p>
+                                                    Please REMOVE your iCloud account before sending your device to us.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -221,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </section>
     <footer>
