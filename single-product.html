@@ -207,40 +207,25 @@
                                     <div class="title">
                                         <h5>Please select the condition</h5>
                                     </div>
-                                    <div class="questions">
+                                    <div class="questions conditions">
                                         <div class="row">
                                             <div class="col-12">
-                                                <div class="list-group list-group-horizontal" id="list-tab"
+                                                <div class="list-group alternate list-group-horizontal" id="list-tab"
                                                     role="tablist">
-                                                    <input type="radio" name="quality" class="  active"
-                                                        id="qualityGood"checked>
-                                                    <label class="options" for="qualityGood" data-toggle="list" href="#goodProduct"
-                                                        role="tab" aria-controls="good" >
-                                                        <div class="optText">
-                                                            <p>Good</p>
-                                                        </div>
-                                                    </label>
-                                                    <input type="radio" name="quality" class="  "
-                                                        id="qualityPoor">
-                                                    <label class="options" for="qualityPoor" data-toggle="list" href="#poorProduct"
-                                                        role="tab" aria-controls="good">
-                                                        <div class="optText">
-                                                            <p>Poor</p>
-                                                        </div>
-                                                    </label>
-                                                    <input type="radio" name="quality" class="  "
-                                                        id="qualityFaulty">
-                                                    <label class="options" for="qualityFaulty" data-toggle="list" href="#faultyProduct"
-                                                        role="tab" aria-controls="good">
-                                                        <div class="optText">
-                                                            <p>Faulty</p>
-                                                        </div>
-                                                    </label>
+                                                    <a class="list-group-item list-group-item-action active"
+                                                        id="qualityGood" data-toggle="list" href="#goodProduct"
+                                                        role="tab" aria-controls="good">Good <span class="position-absolute"><i class="fas fa-check"></i></span> </a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        id="qualityPoor" data-toggle="list" href="#poorProduct"
+                                                        role="tab" aria-controls="poor">Poor <span class="position-absolute"><i class="fas fa-check"></i></span> </a>
+                                                    <a class="list-group-item list-group-item-action"
+                                                        id="qualityFaulty" data-toggle="list" href="#faultyProduct"
+                                                        role="tab" aria-controls="Faulty">Faulty <span class="position-absolute"><i class="fas fa-check"></i></span> </a>
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="tab-content" id="nav-tabContent">
-                                                    <div class="tab-pane fade show active" id="goodProduct"
+                                                    <div class="tab-pane descript fade show active" id="goodProduct"
                                                         role="tabpanel" aria-labelledby="qualityGood">
                                                     <div class="row">
                                                         <div class="col-12">
@@ -266,7 +251,7 @@
                                                         </div>
                                                     </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="poorProduct" role="tabpanel"
+                                                    <div class="tab-pane descript fade" id="poorProduct" role="tabpanel"
                                                         aria-labelledby="qualityPoor"><div class="row">
                                                         <div class="col-12">
                                                             <h5>Poor Condition</h5>
@@ -290,7 +275,7 @@
                                                             </ul>
                                                         </div>
                                                     </div></div>
-                                                    <div class="tab-pane fade" id="faultyProduct" role="tabpanel"
+                                                    <div class="tab-pane descript fade" id="faultyProduct" role="tabpanel"
                                                         aria-labelledby="qualityFaulty"><div class="row">
                                                         <div class="col-12">
                                                             <h5>Faulty Condition</h5>
