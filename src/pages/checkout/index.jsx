@@ -1,4 +1,6 @@
 import React from 'react'
+import './main.css'
+import "./auth.css";
 
 function Checkout() {
     return (
