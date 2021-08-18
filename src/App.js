@@ -13,9 +13,6 @@ function App() {
         <p>Get 5% extra bonus.</p>
       </a>
       <Heading />
-      <a href="/" className="promotion grey">
-        <p>Get 5% extra bonus.</p>
-      </a>
       <Switch>
         <Route path='/' exact> <Home/> </Route>
         <Route path='/category' exact> <ProductList/> </Route>

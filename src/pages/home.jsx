@@ -6,6 +6,9 @@ import WhyUs from "../components/Why-Us";
 
 function Home() {
     return ( <> 
+        <a href="/" className="promotion grey">
+            <p>Get 5% extra bonus.</p>
+        </a>
         <Banner/>
         <HowItWorks/>
         <Category/>

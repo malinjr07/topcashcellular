@@ -1,3 +1,6 @@
+.category {
+  background: var(--white);
+}
 .category .category-list {
   background: var(--white);
   border-bottom: 1px solid #dfdfdf;

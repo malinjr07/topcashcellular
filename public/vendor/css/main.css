@@ -1,32 +1,71 @@
 /* Main Css */
+:root {
+  --blue: #6495ed !important;
+  --white: #F8F8F8 !important;
+  --green: #ACCF29 !important;
+  --black: #222222 !important;
+  --dark: #333333 !important;
+  --grey: #cccccc !important;
+  --orange: #f1852a !important;
+}
 
 h1,
 .h1 {
   font-size: 52px;
 }
+
 h2,
 .h2 {
   font-size: 40px;
 }
+
 h3,
 .h3 {
   font-size: 36px;
 }
+
 h4,
 .h4 {
   font-size: 24px;
 }
+
 h5,
 .h5 {
   font-size: 20px;
 }
+
 h6,
 .h6 {
   font-size: 16px;
 }
+
 p,
 .p {
   font-size: 14px;
+}
+
+.green {
+  background: var(--green);
+  color: var(--white);
+}
+
+.green:hover {
+  color: var(--white);
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+}
+
+.grey {
+  background: var(--grey);
+  color: var(--black);
+}
+
+.grey:hover {
+  color: var(--black);
+  -webkit-opacity: 0.8;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
 }
 /* Variables */
 * {
@@ -250,6 +289,7 @@ textarea {
 .promotion p {
   font-size: 16px;
   line-height: 1;
+  margin: 0 !important;
 }
 .main-title {
   text-align: center;
