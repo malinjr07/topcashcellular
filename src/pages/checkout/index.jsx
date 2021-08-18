@@ -5,7 +5,7 @@ import "./auth.css";
 function Checkout() {
     return (
         <section className="checkout">
-            <div className="container-fluid light">
+            <div className="container-fluid bg-light">
                 <div className="row">
                 <div className="col-xl-8 offset-xl-2">
                     <div className="main-title">

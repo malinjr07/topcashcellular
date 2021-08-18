@@ -116,6 +116,10 @@ body {
 textarea {
   resize: none;
 }
+button{
+  border: 0;
+  background-color: transparent;
+}
 @-moz-keyframes upDown {
   0% {
     -webkit-transform: translateY(0);
@@ -366,6 +370,8 @@ header .navbar .navbar-nav .nav-item .nav-link {
   -o-transition: 0.4s;
   transition: 0.4s;
   color: var(--white);
+  border: 0;
+  background-color: transparent;
   width: 100%;
 }
 header .navbar .navbar-nav .nav-item:hover {
