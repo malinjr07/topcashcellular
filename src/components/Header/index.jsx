@@ -1,13 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
+
 
 function Heading() {
     return (
         <header>
             <div className="container">
                 <nav className="navbar navbar-expand-md">
-                    <a className="navbar-brand" href="/">
+                    <Link className="navbar-brand" to="/">
                         <img src="vendor/img/Logo.png" alt="Logo" className="img-fluid" />
-                    </a>
+                    </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -21,76 +24,76 @@ function Heading() {
                     <div className="collapse navbar-collapse" id="mainNav">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item has-dropdown">
-                                <a className="nav-link" href="/">Start Selling</a>
+                                <Link className="nav-link" to="/category">Start Selling</Link>
                                 <ul className="drop-menu">
                                     <li className="menu-item">
-                                        <a className="menu-link" href="/">
+                                        <Link className="menu-link" to="/category/iphone">
                                             <span className="icons">
                                                 <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
                                             </span>
                                             <span className="text">Sell iPhone</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="menu-item">
-                                        <a className="menu-link" href="/">
+                                        <Link className="menu-link" to="/category/iphone">
                                             <span className="icons">
                                                 <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
                                             </span>
                                             <span className="text">Sell iPhone</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="menu-item">
-                                        <a className="menu-link" href="/">
+                                        <Link className="menu-link" to="/category/iphone">
                                             <span className="icons">
                                                 <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
                                             </span>
                                             <span className="text">Sell iPhone</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="menu-item">
-                                        <a className="menu-link" href="/">
+                                        <Link className="menu-link" to="/category/iphone">
                                             <span className="icons">
                                                 <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
                                             </span>
                                             <span className="text">Sell iPhone</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="menu-item">
-                                        <a className="menu-link" href="/">
+                                        <Link className="menu-link" to="/category/iphone">
                                             <span className="icons">
                                                 <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
                                             </span>
                                             <span className="text">Sell iPhone</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="menu-item">
-                                        <a className="menu-link" href="/">
+                                        <Link className="menu-link" to="/category/iphone">
                                             <span className="icons">
                                                 <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
                                             </span>
                                             <span className="text">Sell iPhone</span>
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Support</a>
+                                <Link className="nav-link" to="/support">Support</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Login/Signup</a>
+                                <button type='button' className="nav-link">Login/Signup</button>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Account</a>
+                                <Link className="nav-link" to="/account">Account</Link>
                             </li>
                             <li className="nav-item d-none d-md-block">
-                                <a className="nav-link" href="/"><i className="fas fa-search" /></a>
+                                <button type='button' className="nav-link"><i className="fas fa-search" /></button>
                             </li>
                             <li className="nav-item d-block d-md-none">
-                                <a className="nav-link" href="/"><i className="fas fa-search" />
-                                    Search</a>
+                                <Link className="nav-link" to="/"><i className="fas fa-search" />
+                                    Search</Link>
                             </li>
                             <li className="nav-item boxed">
-                                <a className="nav-link" href="/">
+                                <Link className="nav-link" to="/">
                                     <span className="number">0</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.84 30.09">
                                         <defs />
@@ -112,7 +115,7 @@ function Heading() {
                                             rx="1.75"
                                             ry="1.75" />
                                     </svg>
-                                    My Box</a>
+                                    My Box</Link>
                             </li>
                         </ul>
                     </div>

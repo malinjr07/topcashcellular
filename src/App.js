@@ -8,6 +8,7 @@ import ProductDetails from "./pages/single-product";
 import Supports from "./pages/support";
 import Checkout from "./pages/checkout";
 import Carts from "./pages/cart";
+import Account from "./pages/account";
 
 function App() {
   return (
@@ -21,11 +22,13 @@ function App() {
         <Route path='/category' exact> <ProductList/> </Route>
         <Route path='/category/:sub-category'> <ProductList/> </Route>
         <Route path='/category/:sub-category/:products' exact> <ProductList/> </Route>
+        <Route path='/category/:products' exact> <ProductList/> </Route>
         <Route path='/category/:sub-category/:products/details' exact> <ProductDetails/> 
         </Route>
         <Route path='/support'> <Supports/> </Route>
         <Route path='/order/checkout'> <Checkout/> </Route>
         <Route path='/order/cart'> <Carts/> </Route>
+        <Route path='/account'> <Account/> </Route>
       </Switch>
 
       <Footer />
