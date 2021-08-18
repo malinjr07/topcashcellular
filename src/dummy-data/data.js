@@ -304,11 +304,20 @@ const stock = [
     },
 ];
 
-
+const questions=[
+    {
+        qu:'Whats condition of your device ?',
+        optionOne:'good',
+        optionTwo:'Better',
+        optionThree:'best',
+        optionFour:'Broken',
+    },
+]
 
 export default link;
 
 export {
+    questions,
     stock,
     orders,
     user,
