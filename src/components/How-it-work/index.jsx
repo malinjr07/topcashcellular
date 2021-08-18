@@ -1,6 +1,7 @@
 import React from 'react'
+import "./main.css";
 
-function HIW() {
+function HowItWorks() {
     return (
         <section className="how-it-works section-padding">
             <div className="container">
@@ -89,4 +90,4 @@ function HIW() {
     )
 }
 
-export default HIW
+export default HowItWorks
