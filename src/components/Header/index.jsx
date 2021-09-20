@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
+import {category} from '../../dummy-data/data'
 
 function Heading() {
     return (
@@ -26,54 +26,19 @@ function Heading() {
                             <li className="nav-item has-dropdown">
                                 <Link className="nav-link" to="/category">Start Selling</Link>
                                 <ul className="drop-menu">
-                                    <li className="menu-item">
-                                        <Link className="menu-link" to="/category/iphone">
-                                            <span className="icons">
-                                                <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
-                                            </span>
-                                            <span className="text">Sell iPhone</span>
-                                        </Link>
-                                    </li>
-                                    <li className="menu-item">
-                                        <Link className="menu-link" to="/category/iphone">
-                                            <span className="icons">
-                                                <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
-                                            </span>
-                                            <span className="text">Sell iPhone</span>
-                                        </Link>
-                                    </li>
-                                    <li className="menu-item">
-                                        <Link className="menu-link" to="/category/iphone">
-                                            <span className="icons">
-                                                <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
-                                            </span>
-                                            <span className="text">Sell iPhone</span>
-                                        </Link>
-                                    </li>
-                                    <li className="menu-item">
-                                        <Link className="menu-link" to="/category/iphone">
-                                            <span className="icons">
-                                                <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
-                                            </span>
-                                            <span className="text">Sell iPhone</span>
-                                        </Link>
-                                    </li>
-                                    <li className="menu-item">
-                                        <Link className="menu-link" to="/category/iphone">
-                                            <span className="icons">
-                                                <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
-                                            </span>
-                                            <span className="text">Sell iPhone</span>
-                                        </Link>
-                                    </li>
-                                    <li className="menu-item">
-                                        <Link className="menu-link" to="/category/iphone">
-                                            <span className="icons">
-                                                <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
-                                            </span>
-                                            <span className="text">Sell iPhone</span>
-                                        </Link>
-                                    </li>
+                                   {
+                                       category.map((item, i) =>
+                                       <li className="menu-item" key={i}>
+                                           <Link className="menu-link" to="/category/iphone">
+                                               <span className="icons">
+                                                   <img src="vendor/img/iphone.png" alt="" className="img-fluid" />
+                                               </span>
+                                              <span className="text">{item.title}</span>
+                                            </Link>
+                                       </li>
+                                       )
+                                   }
+                                    
                                 </ul>
                             </li>
                             <li className="nav-item">

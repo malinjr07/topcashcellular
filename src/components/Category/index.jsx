@@ -1,5 +1,6 @@
 import React from 'react'
 import "./main.css";
+import {category} from '../../dummy-data/data' 
 
 function Category() {
     return (
@@ -18,7 +19,21 @@ function Category() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-4 col-6 category-list">
+                    {
+                        category.map((item, i) => 
+                        <div className="col-md-4 col-6 category-list" key={i}>
+                           <a href="/" className="category-item">
+                              <img src="vendor/img/samsung.png" className="img-fluid" alt="samsung.png" />
+                              {/* <img src={item.} className="img-fluid" alt="samsung.png" /> */}
+                              <span className="category-title">
+                               {item.title}
+                              </span>
+                          </a>
+                       </div>
+                        
+                        )
+                    }
+                    {/* <div className="col-md-4 col-6 category-list">
                         <a href="/" className="category-item">
                             <img src="vendor/img/samsung.png" className="img-fluid" alt="samsung.png" />
                             <span className="category-title">
@@ -41,15 +56,7 @@ function Category() {
                                 iPhone
                             </span>
                         </a>
-                    </div>
-                    <div className="col-md-4 col-6 category-list">
-                        <a href="/" className="category-item">
-                            <img src="vendor/img/samsung.png" className="img-fluid" alt="samsung.png" />
-                            <span className="category-title">
-                                iPhone
-                            </span>
-                        </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
