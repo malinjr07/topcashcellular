@@ -1,8 +1,10 @@
 import React from 'react'
 import "./main.css";
 import {category} from '../../dummy-data/data' 
+import { Link, Route, useRouteMatch} from 'react-router-dom';
 
 function Category() {
+    const {path, url}=useRouteMatch();
     return (
         <section className="category section-padding">
             <div className="container">
@@ -22,43 +24,22 @@ function Category() {
                     {
                         category.map((item, i) => 
                         <div className="col-md-4 col-6 category-list" key={i}>
-                           <a href="/" className="category-item">
+                           <Link to={`/${url}/${item.slug}`} className="category-item">
                               <img src="vendor/img/samsung.png" className="img-fluid" alt="samsung.png" />
                               {/* <img src={item.} className="img-fluid" alt="samsung.png" /> */}
                               <span className="category-title">
                                {item.title}
                               </span>
-                          </a>
+                          </Link>
                        </div>
                         
                         )
                     }
-                    {/* <div className="col-md-4 col-6 category-list">
-                        <a href="/" className="category-item">
-                            <img src="vendor/img/samsung.png" className="img-fluid" alt="samsung.png" />
-                            <span className="category-title">
-                                iPhone
-                            </span>
-                        </a>
-                    </div>
-                    <div className="col-md-4 col-6 category-list">
-                        <a href="/" className="category-item">
-                            <img src="vendor/img/samsung.png" className="img-fluid" alt="samsung.png" />
-                            <span className="category-title">
-                                iPhone
-                            </span>
-                        </a>
-                    </div>
-                    <div className="col-md-4 col-6 category-list">
-                        <a href="/" className="category-item">
-                            <img src="vendor/img/samsung.png" className="img-fluid" alt="samsung.png" />
-                            <span className="category-title">
-                                iPhone
-                            </span>
-                        </a>
-                    </div> */}
                 </div>
             </div>
+            <Route path={`${path}/:slug`}>
+                <Category/>
+            </Route>
         </section>
 
     )

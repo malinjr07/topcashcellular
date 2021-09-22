@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, useRouteMatch, BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Heading from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
@@ -21,7 +21,6 @@ function App() {
       <Switch>
         <Route path='/' exact> <Home/> </Route>
         <Route path='/category'> <ProductList/> </Route>
-        <Route path={`/:slug`}> <ProductList/> </Route>
         <Route path='/:p/details'> <ProductDetails/> </Route>
         <Route path='/support'> <Supports/> </Route>
         <Route path='/order/checkout'> <Checkout/> </Route>
