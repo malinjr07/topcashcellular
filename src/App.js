@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import { Switch, Route, useRouteMatch, BrowserRouter as Router } from "react-router-dom";
 import Heading from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
@@ -11,6 +11,7 @@ import Carts from "./pages/cart";
 import Account from "./pages/account";
 
 function App() {
+  
   return (
     <Router>
       <a href="/" className="promotion top-fix green">
@@ -19,12 +20,9 @@ function App() {
       <Heading />
       <Switch>
         <Route path='/' exact> <Home/> </Route>
-        <Route path='/category' exact> <ProductList/> </Route>
-        <Route path='/category/:sub-category'> <ProductList/> </Route>
-        <Route path='/category/:sub-category/:products' exact> <ProductList/> </Route>
-        <Route path='/category/:products' exact> <ProductList/> </Route>
-        <Route path='/category/:sub-category/:products/details' exact> <ProductDetails/> 
-        </Route>
+        <Route path='/category'> <ProductList/> </Route>
+        <Route path={`/:slug`}> <ProductList/> </Route>
+        <Route path='/:p/details'> <ProductDetails/> </Route>
         <Route path='/support'> <Supports/> </Route>
         <Route path='/order/checkout'> <Checkout/> </Route>
         <Route path='/order/cart'> <Carts/> </Route>

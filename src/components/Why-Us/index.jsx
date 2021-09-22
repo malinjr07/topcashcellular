@@ -2,8 +2,6 @@ import React from 'react'
 import "./main.css";
 import {whyUs} from "../../dummy-data/data"
 
-console.log(whyUs);
-
 function WhyUs() {
     return (
         <section className="why-us section-padding">

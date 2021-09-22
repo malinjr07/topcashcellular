@@ -82,9 +82,10 @@ function Footer() {
                         </div>
                         <div className="col-md-4">
                             <p>Application Developed By
-                                <a href>Maruf</a>
+                                <a href='mailto:mnjr@fastcodertech.com' >Maruf</a>, &nbsp; &nbsp;
+                                <a href='mailto:alemhasib@fastcodertech.com' >Alem</a> &nbsp;
                                 &amp;
-                                <a href>Mujahid</a>
+                                <a href='mailto:mujahidulislam92@gmail.com' >Mujahid</a>
                             </p>
                         </div>
                     </div>
